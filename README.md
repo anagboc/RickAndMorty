@@ -30,7 +30,11 @@ mvn clean install
 java -jar target/rick_and_morty-0.0.1-SNAPSHOT.jar
 
 Usage
+Import collection Postman:
+https://github.com/anagboc/RickAndMorty/blob/master/Rick%20And%20Morty.postman_collection.json
 
+or execute
+curl --location --globoff 'http://localhost:3456/api/v1/search-character-appearance?name={{name}}'
 
 Directory Structure
 src/main/java: Java source code.
