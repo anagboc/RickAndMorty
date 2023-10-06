@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "e119a27e-5604-4da3-8a31-4b321b6fa5bc",
+		"name": "Rick And Morty",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11182065"
+	},
+	"item": [
+		{
+			"name": "Get Character info",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3456/api/v1/search-character-appearance?name={{name}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3456",
+					"path": [
+						"api",
+						"v1",
+						"search-character-appearance"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "{{name}}",
+							"description": "Character Name"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 - OK (Example Rick)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3456/api/v1/search-character-appearance?name=Rick",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3456",
+							"path": [
+								"api",
+								"v1",
+								"search-character-appearance"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Rick"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Oct 2023 14:47:57 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \"Rick\",\n    \"episodes\": [\n        \"Pilot\",\n        \"Lawnmower Dog\",\n        \"Anatomy Park\",\n        \"M. Night Shaym-Aliens!\",\n        \"Meeseeks and Destroy\",\n        \"Rick Potion #9\",\n        \"Raising Gazorpazorp\",\n        \"Rixty Minutes\",\n        \"Something Ricked This Way Comes\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"Ricksy Business\",\n        \"A Rickle in Time\",\n        \"Mortynight Run\",\n        \"Auto Erotic Assimilation\",\n        \"Total Rickall\",\n        \"Get Schwifty\",\n        \"The Ricks Must Be Crazy\",\n        \"Big Trouble in Little Sanchez\",\n        \"Interdimensional Cable 2: Tempting Fate\",\n        \"Look Who's Purging Now\",\n        \"The Wedding Squanchers\",\n        \"The Rickshank Rickdemption\",\n        \"Rickmancing the Stone\",\n        \"Pickle Rick\",\n        \"Vindicators 3: The Return of Worldender\",\n        \"The Whirly Dirly Conspiracy\",\n        \"Rest and Ricklaxation\",\n        \"The Ricklantis Mixup\",\n        \"Morty's Mind Blowers\",\n        \"The ABC's of Beth\",\n        \"The Rickchurian Mortydate\",\n        \"Edge of Tomorty: Rick, Die, Rickpeat\",\n        \"The Old Man and the Seat\",\n        \"One Crew Over the Crewcoo's Morty\",\n        \"Claw and Hoarder: Special Ricktim's Morty\",\n        \"Rattlestar Ricklactica\",\n        \"Never Ricking Morty\",\n        \"Promortyus\",\n        \"The Vat of Acid Episode\",\n        \"Childrick of Mort\",\n        \"Star Mort: Rickturn of the Jerri\",\n        \"Mort Dinner Rick Andre\",\n        \"Mortyplicity\",\n        \"A Rickconvenient Mort\",\n        \"Rickdependence Spray\",\n        \"Amortycan Grickfitti\",\n        \"Rick & Morty's Thanksploitation Spectacular\",\n        \"Gotron Jerrysis Rickvangelion\",\n        \"Rickternal Friendshine of the Spotless Mort\",\n        \"Forgetting Sarick Mortshall\",\n        \"Rickmurai Jack\",\n        \"The Ricklantis Mixup\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"The Rickshank Rickdemption\",\n        \"The Ricklantis Mixup\",\n        \"The Rickshank Rickdemption\",\n        \"The Ricklantis Mixup\",\n        \"The Ricklantis Mixup\",\n        \"The Rickshank Rickdemption\",\n        \"The Ricklantis Mixup\",\n        \"The Ricklantis Mixup\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"The Ricklantis Mixup\",\n        \"Rick Potion #9\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"The Rickshank Rickdemption\",\n        \"The Ricklantis Mixup\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"The Rickshank Rickdemption\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"The Ricklantis Mixup\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"The Ricklantis Mixup\",\n        \"The Ricklantis Mixup\",\n        \"Close Rick-counters of the Rick Kind\",\n        \"The Rickshank Rickdemption\",\n        \"Rickmurai Jack\"\n    ],\n    \"first_apppearance\": \"2013-12-02\"\n}"
+				},
+				{
+					"name": "404 - Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3456/api/v1/search-character-appearance?name=RickR",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3456",
+							"path": [
+								"api",
+								"v1",
+								"search-character-appearance"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "RickR"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 06 Oct 2023 14:50:20 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"errorMessage\": \"Rick and Morty Api Error: \",\n    \"errorDetails\": \"MessageError: 404 Not Found: \\\"{\\\"error\\\":\\\"There is nothing here\\\"}\\\"\"\n}"
+				}
+			]
+		}
+	]
+}
